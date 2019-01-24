@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun:400,700i');
+
+:root {
+
+    /* PROJECT COLORS --------------- */
+    --white: #fff;
+    --off-white: #efefef;
+    --black: #000;
+    --off-black: #1b1b1b;
+        /* Brand Colors */
+        --green: #8bc34a;
+        --light-green: #bef67a;
+        --dark-green: #5a9216;
+        /* Signal Colors */
+        --red: #f44336;
+        --yellow: #ffeb3b;
+        --green: #8bc34a;
+        --blue: #2196f3;
+    /* PROJECT FONTS --------------- */
+        --brand: 'Sarabun', sans-serif;
+
+    /* PROJECT ICONS --------------- */
+
+
+    /* PROJECT OTHER STYLES --------------- */
+
+}
+.app {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--site-font);
+}

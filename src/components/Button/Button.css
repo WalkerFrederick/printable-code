@@ -1,0 +1,45 @@
+.button {
+    display: flex;
+    min-height: 20px;
+    min-width: 20px;
+    padding: 15px 25px;
+    background: var(--blue);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    align-items: center;
+}
+.button * {
+    float: left;
+}
+.button-icon {
+    padding-right: 10px;
+}
+.button:focus {
+    border: none;
+    outline:0;
+}
+.button-white {
+    color: var(--off-black);
+    background: var(--off-white);
+}
+.button-red {
+     color: var(--off-white);
+     background: var(--red);
+ }
+.button-yellow {
+    color: var(--off-black);
+    background: var(--yellow);
+}
+.button-green {
+    color: var(--white);
+    background: var(--green);
+}
+.button-green:focus {
+    background: var(--dark-green);
+}
+.button-blue {
+    color: var(--white);
+    background: var(--blue);
+}
