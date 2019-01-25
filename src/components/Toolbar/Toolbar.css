@@ -1,0 +1,33 @@
+.toolbar {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 25%;
+    top: 80px;
+    max-width: 320px;
+    min-width: 200px;
+    background: var(--dark-grey);
+}
+.toolbar * {
+    color: var(--off-white);
+    padding-left: 25px;
+
+}
+.toolbar h1 {
+    font-style: italic;
+}
+.toolbar ul {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+}
+.toolbar li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 700;
+}
+.toolbar li:hover {
+    cursor: pointer;
+    background: var(--off-black);
+}

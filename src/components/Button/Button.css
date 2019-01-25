@@ -50,6 +50,7 @@
 /* YELLOW BUTTONS */
 .button-yellow {
     color: var(--off-black);
+    fill: var(--off-black);
     background: var(--yellow);
 }
 .button-yellow:hover {
@@ -59,7 +60,8 @@
 
 /* GREEN BUTTONS */
 .button-green {
-    color: var(--white);
+    color: var(--off-white);
+    fill: var(--off-white);
     background: var(--green);
 }
 .button-green:hover {
@@ -69,8 +71,8 @@
 
 /* BLUE BUTTONS */
 .button-blue {
-    color: var(--white);
-    fill: var(--white);
+    color: var(--off-white);
+    fill: var(--off-white);
     background: var(--dark-blue);
 }
 .button-blue:hover {

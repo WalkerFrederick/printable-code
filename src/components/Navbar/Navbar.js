@@ -10,10 +10,12 @@ class Navbar extends Component {
             <nav className='nav'>
                 <div className="navbar">
                     <div className="nav-left">
-                        printableCode.org
+                        <h1>printableCode.org</h1>
                     </div>
                     <div className="nav-right">
-                        <Button color="blue" socialIcon="github" materialIcon="" text="GitHub"></Button>
+                        <Button color="green" socialIcon="github" materialIcon="" text="GitHub"></Button>
+                        <Button color="green" socialIcon="twitter-alt" materialIcon="" text="Twitter"></Button>
+
                     </div>
                 </div>
             </nav>
