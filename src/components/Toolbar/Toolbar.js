@@ -17,6 +17,9 @@ class Toolbar extends Component {
                     <li>Best Practices</li>
                     <li>Source Code</li>
                 </ul>
+                <div className={'toolbar-footer'}>
+                    <span>© {(new Date().getFullYear())}</span>
+                </div>
             </div>
         );
     }
