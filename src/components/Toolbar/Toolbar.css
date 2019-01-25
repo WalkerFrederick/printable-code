@@ -52,3 +52,8 @@
         max-width: 400px;
     }
 }
+@media screen and (min-width: 1001px){
+    .toolbar {
+        transform: translate(0%) !important;
+    }
+}
