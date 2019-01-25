@@ -3,6 +3,7 @@
     min-height: 20px;
     min-width: 20px;
     padding: 10px 25px;
+    /* default button to blue */
     background: var(--blue);
     border: none;
     font-size: 1rem;
@@ -10,37 +11,68 @@
     border-radius: .5rem;
     align-items: center;
 }
+.button:hover {
+    cursor: pointer;
+}
 .button * {
     float: left;
 }
 .button-icon {
     padding-right: 10px;
-    fill: white;
 }
 .button:focus {
     border: none;
     outline:0;
 }
+
+/* % built in colors: white, red, yellow, green, blue */
+
+/* WHITE BUTTONS */
 .button-white {
-    color: var(--off-black);
-    background: var(--off-white);
+     color: var(--off-black);
+     fill: var(--off-black);
+     background: var(--off-white);
 }
+.button-white:hover {
+    background: var(--grey);
+}
+/* RED BUTTONS */
 .button-red {
      color: var(--off-white);
-     background: var(--red);
+     fill: var(--off-white);
+     background: var(--dark-red);
  }
+.button-red:hover {
+    background: var(--red);
+}
+
+
+/* YELLOW BUTTONS */
 .button-yellow {
     color: var(--off-black);
     background: var(--yellow);
 }
+.button-yellow:hover {
+    background: var(--dark-yellow);
+}
+
+
+/* GREEN BUTTONS */
 .button-green {
     color: var(--white);
     background: var(--green);
 }
-.button-green:focus {
+.button-green:hover {
     background: var(--dark-green);
 }
+
+
+/* BLUE BUTTONS */
 .button-blue {
     color: var(--white);
-    background: var(--blue);
+    fill: var(--white);
+    background: var(--dark-blue);
 }
+.button-blue:hover {
+     background: var(--blue);
+ }

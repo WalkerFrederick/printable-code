@@ -4,7 +4,8 @@
 
     /* PROJECT COLORS --------------- */
     --white: #fff;
-    --off-white: #efefef;
+    --off-white: #eceff1;
+    --grey: #e0e0e0;
     --black: #000;
     --off-black: #1b1b1b;
         /* Brand Colors */
@@ -12,10 +13,15 @@
         --light-green: #bef67a;
         --dark-green: #5a9216;
         /* Signal Colors */
-        --red: #f44336;
-        --yellow: #ffeb3b;
+        --red: #ff7961;
+        --dark-red: #f44336;
+        --yellow: #ffff72;
+        --dark-yellow: #ffeb3b;
         --green: #8bc34a;
-        --blue: #2196f3;
+        --dark-green: #5a9216;
+        --blue: #6ec6ff;
+        --dark-blue: #2196f3;
+
     /* PROJECT FONTS --------------- */
         --brand: 'Sarabun', sans-serif;
 
