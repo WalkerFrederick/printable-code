@@ -4,10 +4,11 @@ import './Toolbar.css';
 class Toolbar extends Component {
     render() {
         return (
-            <div className="toolbar">
+            //{this.props.menuState ? 'hello' : null}
+            <div className={`toolbar startingMenu ${ this.props.menuState ? 'opened' : 'closed'}`}>
                 <h1>Tools -</h1>
                 <ul>
-                    <li>Print Code</li>
+                    <li>Code Print</li>
                     <li>Create Test</li>
                 </ul>
                 <h1>Resources -</h1>

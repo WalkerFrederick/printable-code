@@ -1,17 +1,29 @@
 .toolbar {
     position: absolute;
+    padding-top: 80px;
+    top: 0;
+    bottom: 0;
     z-index: 5;
-    height: 100%;
     width: 25%;
-    top: 80px;
     max-width: 320px;
-    min-width: 200px;
     background: var(--dark-grey);
 }
+
+.opened {
+    transform: translate(0%);
+    transition: transform 500ms ease-in-out;
+}
+.closed {
+    transform: translate(-100%);
+    transition: transform 500ms ease-in-out;
+}
+
 .toolbar * {
     color: var(--off-white);
     padding-left: 25px;
-
+}
+.toolbar *::selection {
+    background: none;
 }
 .toolbar h1 {
     font-style: italic;
@@ -27,7 +39,15 @@
     padding: 15px 0;
     font-weight: 700;
 }
+
 .toolbar li:hover {
     cursor: pointer;
     background: var(--off-black);
+}
+
+@media screen and (max-width: 1000px) {
+    .toolbar {
+        width: 90%;
+        max-width: 500px;
+    }
 }

@@ -39,4 +39,6 @@
     margin: 0;
     background: var(--off-white);
     font-family: var(--site-font);
+
+    overflow-x: hidden;
 }
