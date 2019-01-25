@@ -17,27 +17,31 @@ class Navbar extends Component {
             this.props.callback(!this.state.isActive);
     }
     toggleButton = () => {
+        this.props.callback(!this.state.isActive);
         this.setState({
             isActive: !this.state.isActive
         })
     }
     render() {
         return (
-            <nav className='nav'>
-                <div className="navbar">
-                    <div className="nav-left">
-                        <div onClick={this.toggleMenu.bind(this)}>
-                            <HamburgerSlider className={"hamburger"} isActive={this.state.isActive} toggleButton={this.toggleButton} barColor="white" />
+            <div className={"nav-outer"}>
+                <div onClick={this.toggleButton} className={`background ${ this.state.isActive ? 'backgroundShow' : 'backgroundHidden'}`}></div>
+                <nav className='nav'>
+                    <div className="navbar">
+                        <div className="nav-left">
+                            <div onClick={this.toggleMenu.bind(this)}>
+                                <HamburgerSlider className={"hamburger"} isActive={this.state.isActive} toggleButton={this.toggleButton} barColor="white" />
+                            </div>
+                            <h1>printableCode.org</h1>
                         </div>
-                        <h1>printableCode.org</h1>
-                    </div>
-                    <div className="nav-right">
-                        <Button color="green" socialIcon="github" materialIcon="" text="GitHub"></Button>
-                        <Button color="green" socialIcon="twitter-alt" materialIcon="" text="Twitter"></Button>
+                        <div className="nav-right">
+                            <Button color="green" socialIcon="github" materialIcon="" text="GitHub"></Button>
+                            <Button color="green" socialIcon="twitter-alt" materialIcon="" text="Twitter"></Button>
 
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         );
     }
 }
