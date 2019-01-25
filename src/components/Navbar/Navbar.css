@@ -58,8 +58,20 @@
     .nav-right {
         display: none;
     }
+    .nav-left h1 {
+        align-self: center;
+        justify-self: center;
+    }
+    .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .nav-left {
+        display: flex;
+        justify-content: center;
         width: 100%;
         text-align: center;
+
     }
 }

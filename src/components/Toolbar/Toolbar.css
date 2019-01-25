@@ -2,6 +2,7 @@
     position: absolute;
     padding-top: 80px;
     top: 0;
+    left: 0;
     bottom: 0;
     z-index: 5;
     width: 25%;
@@ -47,7 +48,7 @@
 
 @media screen and (max-width: 1000px) {
     .toolbar {
-        width: 90%;
-        max-width: 500px;
+        width: 80%;
+        max-width: 400px;
     }
 }
