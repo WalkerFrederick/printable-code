@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import '../node_modules/material-icons/iconfont/material-icons.css'
 import Navbar from './components/Navbar/Navbar.js';
 
 class App extends Component {

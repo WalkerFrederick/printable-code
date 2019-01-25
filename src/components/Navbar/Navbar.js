@@ -13,7 +13,7 @@ class Navbar extends Component {
                         printableCode.org
                     </div>
                     <div className="nav-right">
-                        <Button color="white" icon="face" text="GitHub"></Button>
+                        <Button color="blue" socialIcon="github" materialIcon="" text="GitHub"></Button>
                     </div>
                 </div>
             </nav>
