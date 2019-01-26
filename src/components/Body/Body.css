@@ -1,0 +1,40 @@
+.body {
+    position: absolute;
+    padding: 120px 25px 0px 25px;
+    top: 0;
+    left: 320px;
+    right: 0;
+    height: 100%;
+    background: var(--off-white);
+    color: var(--dark-grey);
+
+    display: flex;
+    justify-content: center;
+}
+.inner-body {
+    width: 100%;
+    max-width: 1000px;
+}
+.page-title {
+    font-style: italic;
+}
+.form-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+.form-top .textField{
+    width: 100%;
+    max-width: 450px;
+
+}
+@media screen and (max-width: 1000px) {
+    .body {
+        left: 0;
+    }
+
+}
+.inner-body {
+
+}
