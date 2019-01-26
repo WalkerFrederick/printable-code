@@ -33,7 +33,7 @@
      fill: var(--off-black);
      background: var(--off-white);
 }
-.button-white:hover {
+.button-white:focus {
     background: var(--grey);
 }
 /* RED BUTTONS */
@@ -42,7 +42,7 @@
      fill: var(--off-white);
      background: var(--dark-red);
  }
-.button-red:hover {
+.button-red:focus {
     background: var(--red);
 }
 
@@ -53,7 +53,7 @@
     fill: var(--off-black);
     background: var(--yellow);
 }
-.button-yellow:hover {
+.button-yellow:focus {
     background: var(--dark-yellow);
 }
 
@@ -64,7 +64,7 @@
     fill: var(--off-white);
     background: var(--green);
 }
-.button-green:hover {
+.button-green:focus {
     background: var(--dark-green);
 }
 
@@ -75,6 +75,6 @@
     fill: var(--off-white);
     background: var(--dark-blue);
 }
-.button-blue:hover {
+.button-blue:focus {
      background: var(--blue);
  }

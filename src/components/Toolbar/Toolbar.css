@@ -40,10 +40,9 @@
     padding: 15px 0;
     font-weight: 700;
 }
-
 .toolbar li:hover {
     cursor: pointer;
-    background: var(--off-black);
+    background: var(--black);
 }
 
 .toolbar-footer {
