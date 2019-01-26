@@ -1,6 +1,6 @@
 .toolbar {
-    position: absolute;
-    padding: 120px 0 0 0;
+    position: fixed;
+    padding: 80px 0 0 0;
     top: 0;
     left: 0;
     z-index: 5;
@@ -47,7 +47,6 @@
 
 .toolbar-footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 25px 0px;
     text-align: center;

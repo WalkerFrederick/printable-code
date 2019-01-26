@@ -1,6 +1,7 @@
 {
   "name": "printable-code",
   "version": "0.1.0",
+  "homepage": "http://urdev.xyz/app",
   "private": true,
   "dependencies": {
     "material-icons": "^0.3.0",
