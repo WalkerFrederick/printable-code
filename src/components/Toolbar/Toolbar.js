@@ -8,14 +8,13 @@ class Toolbar extends Component {
             <div className={`toolbar startingMenu ${ this.props.menuState ? 'opened' : 'closed'}`}>
                 <h1>Tools -</h1>
                 <ul>
-                    <li>Code Print</li>
-                    <li>Create Test</li>
+                    <li>Print Code</li>
                 </ul>
                 <h1>Resources -</h1>
                 <ul>
-                    <li>Style Guides</li>
-                    <li>Best Practices</li>
-                    <li>Source Code</li>
+                    <li onClick={function () {
+                        window.open("https://github.com/WalkerFrederick/printable-code", "_blank")
+                    }}>Source Code</li>
                 </ul>
                 <div className={'toolbar-footer'}>
                     <span>© {(new Date().getFullYear())}</span>

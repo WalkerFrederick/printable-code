@@ -35,8 +35,12 @@ class Navbar extends Component {
                             <h1>printableCode.org</h1>
                         </div>
                         <div className="nav-right">
-                            <Button color="green" socialIcon="github" materialIcon="" text="GitHub"></Button>
-                            <Button color="green" socialIcon="twitter-alt" materialIcon="" text="Twitter"></Button>
+                            <Button onClick={function () {
+                                window.open('https://github.com/walkerfrederick',"_blank")
+                            }} color="green" socialIcon="github" materialIcon="" text="GitHub"/>
+                            <Button onClick={function () {
+                                window.open('https://twitter.com/WFrederickTweet',"_blank")
+                            }} color="green" socialIcon="twitter-alt" materialIcon="" text="Twitter"/>
 
                         </div>
                     </div>

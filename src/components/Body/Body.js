@@ -43,7 +43,9 @@ class Body extends Component {
                         <CodeMirror ref={(c) => this.cm = c} FocusChange={this.changeFocus.bind(this)} className={'code-input'} options={{lineNumbers: true, mode: 'javascript'}} />
                     </div>
                     <div className={'form-bottom'}>
-                        <Button color={"blue"} materialIcon={"print"} text={"Print"}/>
+                        <Button onClick={function () {
+                            window.print()
+                        }} color={"blue"} materialIcon={"print"} text={"Print"}/>
                     </div>
                 </div>
             </div>

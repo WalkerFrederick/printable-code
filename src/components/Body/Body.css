@@ -69,6 +69,11 @@
         visibility: hidden;
         display: none !important;
     }
+    .form-top .textField{
+        min-width: 50%;
+        max-width: 50%;
+
+    }
     .textField input{
         border: none !important;
     }
