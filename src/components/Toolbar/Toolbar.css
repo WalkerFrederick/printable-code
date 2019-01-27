@@ -42,7 +42,7 @@
 }
 .toolbar li:hover {
     cursor: pointer;
-    background: var(--black);
+    background: var(--off-black);
 }
 
 .toolbar-footer {
