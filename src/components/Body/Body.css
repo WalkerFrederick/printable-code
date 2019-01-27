@@ -29,12 +29,15 @@
     max-width: 450px;
 
 }
+
+.form-code {
+    margin: 50px 0;
+    border: 2px solid var(--dark-grey);
+
+}
 @media screen and (max-width: 1000px) {
     .body {
         left: 0;
     }
-
-}
-.inner-body {
 
 }
