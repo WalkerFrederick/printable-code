@@ -35,6 +35,9 @@
     border: 2px solid var(--dark-grey);
 
 }
+.form-code-focus {
+    border: 2px solid var(--green);
+}
 @media screen and (max-width: 1000px) {
     .body {
         left: 0;

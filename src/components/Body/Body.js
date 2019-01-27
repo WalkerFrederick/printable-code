@@ -7,6 +7,19 @@ import './Body.css';
 import TextField from "../TextField/TextField";
 
 class Body extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            isFocused: false,
+        }
+
+        this.changeFocus.bind(this)
+    }
+
+    changeFocus = function() {
+        this.setState({isFocused: !this.state.isFocused});
+    };
+
     render() {
         return (
             <div className={"body"}>
@@ -16,8 +29,8 @@ class Body extends Component {
                         <TextField name={"Title"}/>
                         <TextField name={"Author"}/>
                     </div>
-                    <div className={"form-code"}>
-                        <CodeMirror options={{lineNumbers: true,}} />
+                    <div className={`form-code ${this.state.isFocused ? 'form-code-focus': null }`}>
+                        <CodeMirror onFocusChange={this.changeFocus.bind(this)} className={'code-input'} options={{lineNumbers: true,}} />
                     </div>
                 </div>
             </div>
