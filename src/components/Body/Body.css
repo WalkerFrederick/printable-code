@@ -34,11 +34,15 @@
     margin: 50px 0;
     border: 2px solid var(--dark-grey);
     min-height: 100px;
-
 }
 .form-code-focus {
     border: 2px solid var(--green);
 }
+
+.form-bottom {
+    margin-bottom: 150px;
+}
+
 @media screen and (max-width: 1000px) {
     .body {
         left: 0;
@@ -83,5 +87,8 @@
     }
     .code-input {
         height: 100%;
+    }
+    .form-bottom {
+        margin: 0;
     }
 }

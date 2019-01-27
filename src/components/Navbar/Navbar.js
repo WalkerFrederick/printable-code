@@ -32,7 +32,7 @@ class Navbar extends Component {
                             <div onClick={this.toggleMenu.bind(this)}>
                                 <HamburgerSlider className={"hamburger"} isActive={this.state.isActive} toggleButton={this.toggleButton} barColor="white" />
                             </div>
-                            <h1>printableCode.org</h1>
+                            <h1>printableCode</h1>
                         </div>
                         <div className="nav-right">
                             <Button onClick={function () {
