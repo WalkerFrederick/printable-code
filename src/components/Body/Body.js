@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CodeMirror from 'react-codemirror';
 import 'codemirror/lib/codemirror.css';
 
+import Button from '../Button/Button.js'
+
 
 import './Body.css';
 import TextField from "../TextField/TextField";
@@ -31,6 +33,9 @@ class Body extends Component {
                     </div>
                     <div className={`form-code ${this.state.isFocused ? 'form-code-focus': null }`}>
                         <CodeMirror onFocusChange={this.changeFocus.bind(this)} className={'code-input'} options={{lineNumbers: true,}} />
+                    </div>
+                    <div className={'form-bottom'}>
+                        <Button color={"blue"} materialIcon={"print"} text={"Print"}></Button>
                     </div>
                 </div>
             </div>
