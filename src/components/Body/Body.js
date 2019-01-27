@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CodeMirror from 'react-codemirror';
 import 'codemirror/lib/codemirror.css';
+import 'codemirror/mode/javascript/javascript'
 
 import Button from '../Button/Button.js'
 
@@ -15,12 +16,19 @@ class Body extends Component {
             isFocused: false,
         }
 
+        this.codeRef = React.createRef();
+
         this.changeFocus.bind(this)
     }
 
     changeFocus = function() {
         this.setState({isFocused: !this.state.isFocused});
     };
+
+    componentDidMount() {
+        let myCodeMirror = this.cm.getCodeMirror()
+        myCodeMirror.setSize(null, '100%')
+    }
 
     render() {
         return (
@@ -32,10 +40,10 @@ class Body extends Component {
                         <TextField name={"Author"}/>
                     </div>
                     <div className={`form-code ${this.state.isFocused ? 'form-code-focus': null }`}>
-                        <CodeMirror onFocusChange={this.changeFocus.bind(this)} className={'code-input'} options={{lineNumbers: true,}} />
+                        <CodeMirror ref={(c) => this.cm = c} FocusChange={this.changeFocus.bind(this)} className={'code-input'} options={{lineNumbers: true, mode: 'javascript'}} />
                     </div>
                     <div className={'form-bottom'}>
-                        <Button color={"blue"} materialIcon={"print"} text={"Print"}></Button>
+                        <Button color={"blue"} materialIcon={"print"} text={"Print"}/>
                     </div>
                 </div>
             </div>

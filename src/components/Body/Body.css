@@ -33,6 +33,7 @@
 .form-code {
     margin: 50px 0;
     border: 2px solid var(--dark-grey);
+    min-height: 100px;
 
 }
 .form-code-focus {
@@ -42,5 +43,40 @@
     .body {
         left: 0;
     }
+}
+@media print {
+    .nav {
+        visibility: hidden;
+        display: none;
+    }
+    .toolbar {
+        visibility: hidden;
+        display: none;
+    }
+    .body {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    .inner-body {
+        height: 100%;
+    }
 
+    .page-title {
+        visibility: hidden;
+        display: none !important;
+    }
+    .textField input{
+        border: none !important;
+    }
+    .button {
+        visibility: hidden !important;
+        display: none !important;
+    }
+    .code-input {
+        height: 100%;
+    }
 }
