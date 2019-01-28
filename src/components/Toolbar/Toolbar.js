@@ -14,7 +14,7 @@ class Toolbar extends Component {
                 <h1>Resources -</h1>
                 <ul>
                     <li onClick={function () {
-                        window.open("https://github.com/WalkerFrederick/printable-code", "_blank")
+                        window.open("https://walkerfrederick.com", "_blank")
                     }}>Author's Blog</li>
                     <li onClick={function () {
                         window.open("https://github.com/WalkerFrederick/printable-code", "_blank")

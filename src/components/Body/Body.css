@@ -36,8 +36,27 @@
     }
 }
 
+.form-selector {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.selector {
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+.selector-selected {
+    border: 2px solid var(--green);
+}
+.selector-selected:focus {
+    border: 2px solid var(--green);
+    background: var(--white);
+}
+
 .form-code {
-    margin: 50px 0;
+    margin: 25px 0 50px 0;
     border: 2px solid var(--dark-grey);
     min-height: 100px;
 }

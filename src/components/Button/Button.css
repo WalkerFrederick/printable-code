@@ -31,10 +31,12 @@
 .button-white {
      color: var(--off-black);
      fill: var(--off-black);
-     background: var(--off-white);
+     background: var(--white);
+    border: 2px solid var(--off-black);
 }
 .button-white:focus {
     background: var(--grey);
+    border: 2px solid var(--off-black);
 }
 /* RED BUTTONS */
 .button-red {
