@@ -15,9 +15,6 @@ class Body extends Component {
         this.state = {
             isFocused: false,
         }
-
-        this.codeRef = React.createRef();
-
         this.changeFocus.bind(this)
     }
 
@@ -38,6 +35,9 @@ class Body extends Component {
                     <div className={"form-top"}>
                         <TextField name={"Title"}/>
                         <TextField name={"Author"}/>
+                    </div>
+                    <div className={"form-selector"}>
+
                     </div>
                     <div className={`form-code ${this.state.isFocused ? 'form-code-focus': null }`}>
                         <CodeMirror ref={(c) => this.cm = c} FocusChange={this.changeFocus.bind(this)} className={'code-input'} options={{lineNumbers: true, mode: 'javascript'}} />

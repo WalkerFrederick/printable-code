@@ -26,8 +26,14 @@
 }
 .form-top .textField{
     width: 100%;
-    max-width: 450px;
 
+}
+
+@media screen and (min-width: 1300px) {
+    .form-top .textField{
+       max-width: 48%;
+
+    }
 }
 
 .form-code {
